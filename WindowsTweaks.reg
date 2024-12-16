@@ -2,36 +2,36 @@ Windows Registry Editor Version 5.00
 
 ; **********************************************
 ; 
-; 1. Персонализация
+; 1. Personaslization
 ; 
-; 1.1. Рабочий стол
-; 1.2. Проводник
-; 1.3. Панель задач
-; 1.4. Меню "Пуск"
-; 1.5. Мой компьютер
-; 1.6. Панель управления
+; 1.1. Desktop
+; 1.2. Explorer
+; 1.3. Taskbar
+; 1.4. Start menu
+; 1.5. My Computer
+; 1.6. Control Panel
 ; 1.7. Windows Update
-; 1.8. Прочее
+; 1.8. Other
 ; 
-; 2. Оптимизация
+; 2. Optimaization
 ; 
-; 3. Безопасность
+; 3. Security
 ; 
-; 4. Контекстные меню
+; 4. Context menus
 ; 
-; 5. Службы
-; 
-; **********************************************
-
-
-; **********************************************
-; 
-; 1. Персонализация
+; 5. Services
 ; 
 ; **********************************************
 
+
 ; **********************************************
-; 1.1. Рабочий стол
+; 
+; 1. Personaslization
+; 
+; **********************************************
+
+; **********************************************
+; 1.1. Desktop
 ; **********************************************
 
 [HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\HideDesktopIcons\NewStartPanel]
@@ -42,14 +42,14 @@ Windows Registry Editor Version 5.00
 
 [HKEY_CURRENT_USER\Control Panel\Desktop]
 
-"FontSmoothing"="2"                ; Включить сглаживание неровностей экранных шрифтов
+"FontSmoothing"="2"                ; Smooth edges of screen fonts
 "FontSmoothingType"=dword:00000002 ; Включить сглаживание ClearType
 "MenuShowDelay"="0"                ; Задержка при открытии меню
 ;"CursorBlinkRate"="200"           ; Увеличить частоту мерцания курсора
 
 
 ; **********************************************
-; 1.2. Проводник
+; 1.2. Explorer
 ; **********************************************
 
 [HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced]
@@ -68,7 +68,7 @@ Windows Registry Editor Version 5.00
 [HKEY_CURRENT_USER\Control Panel\Desktop\WindowMetrics]
 
 ;"MinAnimate"="0"    ; Отключить анимацию окон при свертывании и развертывании
-;"IconTitleWrap"="0" ; Показывать полностью имена длинных файлов в проводнике
+;"IconTitleWrap"="0" ; Показывать полностью имена длинных файлов в Explorerе
 
 
 [HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Shell Folders]
@@ -124,7 +124,7 @@ Windows Registry Editor Version 5.00
 
 
 ; **********************************************
-; 1.3. Панель задач
+; 1.3. Taskbar
 ; **********************************************
 
 "TaskbarGlomLevel"=dword:00000001                      ; Не группировать кнопки на Панели задач
@@ -159,19 +159,19 @@ Windows Registry Editor Version 5.00
 "EnableMtcuvc"=dword:00000000                          ; Старый регулятор громкости
 
 ; **********************************************
-; 1.4. Меню "Пуск"
+; 1.4. Start menu
 ; **********************************************
 
-"Start_ShowRun"=dword:00000001                         ; Отображать команду "Выполнить"
-"Start_ShowSetProgramAccessAndDefaults"=dword:00000000 ; Не отображать "Программы по умолчанию"
-;"Start_ShowMyDocs"=dword:00000000                     ; Не отображать "Документы"
-;"Start_ShowMyMusic"=dword:00000000                    ; Не отображать "Музыка"
-;"Start_ShowMyPics"=dword:00000000                     ; Не отображать "Изображения"
-;"Start_ShowNetConn"=dword:00000000                    ; Не отображать "Подключение к..."
+"Start_ShowRun"=dword:00000001                         ; Show "Выполнить"
+"Start_ShowSetProgramAccessAndDefaults"=dword:00000000 ; Not show "Программы по умолчанию"
+;"Start_ShowMyDocs"=dword:00000000                     ; Not show "Документы"
+;"Start_ShowMyMusic"=dword:00000000                    ; Not show "Музыка"
+;"Start_ShowMyPics"=dword:00000000                     ; Not show "Изображения"
+;"Start_ShowNetConn"=dword:00000000                    ; Not show "Подключение к..."
 
 
 ; **********************************************
-; 1.5. Мой компьютер
+; 1.5. My Computer
 ; **********************************************
 
 [HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows]
@@ -180,8 +180,8 @@ Windows Registry Editor Version 5.00
 [-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\MyComputer\NameSpace\{0DB7E03F-FC29-4DC6-9020-FF41B59E513A}]
 [-HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\Windows\CurrentVersion\Explorer\MyComputer\NameSpace\{0DB7E03F-FC29-4DC6-9020-FF41B59E513A}]
 
-; Удаление папок из Мой компьютер
-;[-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\MyComputer\NameSpace\{088e3905-0323-4b02-9826-5d99428e115f}] ; Рабочий стол
+; Удаление папок из My Computer
+;[-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\MyComputer\NameSpace\{088e3905-0323-4b02-9826-5d99428e115f}] ; Desktop
 ;[-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\MyComputer\NameSpace\{24ad3ad4-a569-4530-98e1-ab02f9417aa8}] ; Видео
 ;[-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\MyComputer\NameSpace\{3dfdf296-dbec-4fb4-81d1-6a3438bcf4de}] ; Документы
 ;[-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\MyComputer\NameSpace\{B4BFCC3A-DB2C-424C-B029-7FE99A87C641}] ; Загрузки
@@ -190,7 +190,7 @@ Windows Registry Editor Version 5.00
 
 
 ; **********************************************
-; 1.6. Панель управления
+; 1.6. Control Panel
 ; **********************************************
 
 [HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\ControlPanel]
@@ -214,13 +214,17 @@ Windows Registry Editor Version 5.00
 ;"ScheduledInstallDay"=dword:00000001            ; Каждый день
 
 
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\wuauserv]
+
+;"Start"=dword:00000004 ; Отключить службу Центр обновления Windows
+
 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\WindowsUpdate\Auto Update]
 
 "NoAutoRebootWithLoggedOnUsers"=dword:00000001   ; Отключить автоматическую перезагрузку
 
 
 ; **********************************************
-; 1.8. Прочее
+; 1.8. Other
 ; **********************************************
 
 [HKEY_CURRENT_USER\Environment]
@@ -293,7 +297,7 @@ Windows Registry Editor Version 5.00
 
 ; **********************************************
 ; 
-; 2. Оптимизация
+; 2. Optimaization
 ; 
 ; **********************************************
 
@@ -305,7 +309,7 @@ Windows Registry Editor Version 5.00
 ;"HungAppTimeout"="100"
 
 
-; Оптимизация отзывчивости системы и сети
+; Optimaization отзывчивости системы и сети
 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Multimedia\SystemProfile]
 
 "SystemResponsiveness"=dword:00000001
@@ -318,15 +322,19 @@ Windows Registry Editor Version 5.00
 "WakeUp"=dword:00000000              ; Не пробуждать компьютер от сна
 
 
-; Оптимизация памяти
+; Optimaization памяти
 [HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\Ndu]
 
 "Start"=dword:00000004
 
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\WebClient\Parameters]
+
+"FileSizeLimitInBytes"=dword:ffffffff ; Increase the WebDAV maximum file size to 4Gb (max)
+
 
 ; **********************************************
 ; 
-; 3. Безопасность
+; 3. Security
 ; 
 ; **********************************************
 
@@ -430,7 +438,7 @@ Windows Registry Editor Version 5.00
 
 ; **********************************************
 ; 
-; 4. Контекстные меню
+; 4. Context menus
 ; 
 ; **********************************************
 
@@ -457,7 +465,7 @@ Windows Registry Editor Version 5.00
 
 ;[HKEY_CLASSES_ROOT\CLSID\{20D04FE0-3AEA-1069-A2D8-08002B30309D}\shell\Item1]
 
-;"MUIVerb"="Панель управления"
+;"MUIVerb"="Control Panel"
 ;"Icon"="imageres.dll,22"
 ;"Position"="Top"
 
@@ -522,13 +530,18 @@ Windows Registry Editor Version 5.00
 
 ; **********************************************
 ;
-; 5. Службы
+; 5. Services
 ;
 ; **********************************************
 
 [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\MpsSvc]
 
 ;"Start"=dword:00000004 ; Отключить службу Брандмауэр Windows
+
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\WinDefend]
+
+;"Start"=dword:00000004 ; Отключить службу Защитник Windows
 
 
 [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\W32Time]
@@ -540,17 +553,6 @@ Windows Registry Editor Version 5.00
 
 ;"Type"="NoSync" ; Не выполнять синхронизацию с сервером времени в интернете
 
-
-[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\WinDefend]
-
-;"Start"=dword:00000004 ; Отключить службу Защитник Windows
-
-
 [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\wscsvc]
 
 ;"Start"=dword:00000004 ; Отключить сдужбу Центр обеспечения безопасности
-
-
-[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\wuauserv]
-
-;"Start"=dword:00000004 ; Отключить службу Центр обновления Windows
