@@ -22,4 +22,4 @@ WindowsTweaks as a regedit config file for fine Windows tuning. Supported items:
 
 Usage:
 
-Just start `WindowsTweaks.reg` file and apply it. In most cases you don't need to restart your PC but but it may be necessary шт some cases.
+Just start `WindowsTweaks.reg` file and apply it. In most cases you don't need to restart your PC but but it may be necessary in some cases.
