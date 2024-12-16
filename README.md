@@ -2,7 +2,8 @@
  
 WindowsTweaks as a regedit config file for fine Windows tuning. Supported items:
 
-```1. Personalization
+```
+1. Personalization
 
 1.1. Desktop
 1.2. Explorer
