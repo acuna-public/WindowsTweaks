@@ -1,6 +1,6 @@
 # WindowsTweaks
  
-WindowsTweaks as a regedit config file for fine Windows tuning. Supported items:
+WindowsTweaks is a Regedit config file for fine Windows tuning. Supported items:
 
 ```
 1. Personalization
